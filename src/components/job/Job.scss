@@ -1,4 +1,4 @@
-// scss mixins
+// Sass mixins
 @mixin flexbox($justify-content: flex-start, $align-items: center, $flex-direction: column) {
     display: flex;
     flex-direction: $flex-direction;
@@ -12,7 +12,7 @@
     margin: $margin;
 }
 
-// styles
+// Styles
 
 $font-size-h1: 2rem;
 $font-size-h3: 1.5rem;
@@ -25,6 +25,7 @@ $font-size-p: 1rem;
 
     h1.job-title {
         font-size: $font-size-h1;
+        margin-top: 2rem;
         margin-bottom: 1rem;
     }
 
@@ -40,6 +41,7 @@ $font-size-p: 1rem;
 
     @include flexbox(space-between);
 
+    // Required stack
     ul.job-required-stack {
         @include list-style(none, 0, 0);
 
@@ -56,11 +58,13 @@ $font-size-p: 1rem;
         }
     }
 
+    // Long description
     .job-long-desc {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
 
+    // Location and type of hiring
     .job-location,
     .job-type-of-hiring {
         text-align: center;
@@ -68,6 +72,7 @@ $font-size-p: 1rem;
         margin-bottom: 1rem;
     }
 
+    // Salary and added date
     .job-salary,
     .job-added {
         position: absolute;
@@ -85,9 +90,5 @@ $font-size-p: 1rem;
     .job-added {
         right: 0;
         margin-right: 1rem;
-    }
-
-    .job-title {
-        margin-top: 2rem;
     }
 }
