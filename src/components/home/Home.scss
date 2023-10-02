@@ -5,26 +5,9 @@
     padding: 20px;
 }
 
-.job-card {
+.job-list-item {
     background-color: #333;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
     margin-bottom: 20px;
     padding: 20px;
-}
-
-.job-card h3 {
-    font-size: 1.2rem;
-}
-
-.job-card p {
-    font-size: 0.9rem;
-}
-
-.job-info {
-    display: flex;
-    justify-content: space-between;
-}
-
-.job-info p {
-    font-size: 0.8rem;
 }

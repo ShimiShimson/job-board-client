@@ -9,6 +9,7 @@ export type JobLocation = {
 export type StackItem = string;
 
 export interface Job {
+  id: string;
   title: string;
   location: JobLocation;
   typeOfHiring: TypeOfHiring[];
