@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-import { JOBS } from "../assets/job-mocks";
+import { JOBS } from "../../assets/job-mocks";
 
 import "./Home.scss";
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
   const jobs = JOBS;
 
   return (
@@ -18,6 +20,9 @@ const Home: React.FC = () => {
             <p>Salary: {job.salary}</p>
             <p>Added: {job.added}</p>
           </div>
+          <button onClick={() => navigate("/job", { state: { job } })}>
+            View Job
+          </button>
         </div>
       ))}
     </div>
