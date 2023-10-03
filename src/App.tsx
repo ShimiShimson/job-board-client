@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Home from "./components/home/Home";
-import Job from "./components/job/Job";
+import Home from "@components/home/Home";
+import Job from "@components/job/Job";
 
 import "./App.css";
 

@@ -1,8 +1,8 @@
 import React from "react";
 
-import JobListItem from "../job-list-item/JobListItem";
+import JobListItem from "@components/job-list-item/JobListItem";
 
-import { JOBS } from "../../assets/job-mocks";
+import { JOBS } from "@assets/job-mocks";
 
 import "./Home.scss";
 

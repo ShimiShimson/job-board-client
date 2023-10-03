@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-import { TStackItem } from "../../types/job";
+import { TStackItem } from "@/types/job";
 
 import "./Job.scss";
 

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { IJob } from "../../types/job";
+
+import { IJob } from "@/types/job";
 
 import "./JobListItem.scss";
 
