@@ -4,7 +4,11 @@ import { IJob } from "@/types/job";
 
 import "./JobListItem.scss";
 
-const JobListItem = ({ job }: { job: IJob }) => {
+interface IJobListItemProps {
+  job: IJob;
+}
+
+const JobListItem = ({ job }: IJobListItemProps) => {
   const navigate = useNavigate();
 
   return (
