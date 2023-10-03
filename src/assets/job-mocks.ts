@@ -1,6 +1,6 @@
-import { Job } from "../types/job";
+import { IJob } from "@/types/job";
 
-export let JOBS: Job[] = [
+export let JOBS: IJob[] = [
   {
     id: "1f6cdc26-1e05-48a7-b2c1-9d7d50e92f94",
     title: "Software Engineer",

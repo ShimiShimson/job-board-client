@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-import { StackItem } from "../../types/job";
+import { TStackItem } from "../../types/job";
 
 import "./Job.scss";
 
@@ -20,7 +20,7 @@ const Job: React.FC = () => {
       </div>
       <ul className="job-required-stack">
         <li className="job-required-stack-header">Required Stack:</li>
-        {job.requiredStack.map((stackItem: StackItem) => (
+        {job.requiredStack.map((stackItem: TStackItem) => (
           <li key={stackItem} className="job-required-stack-item">
             {stackItem}
           </li>

@@ -1,21 +1,20 @@
+export type TTypeOfHiring = "Onsite" | "Remote" | "Hybrid";
 
-export type TypeOfHiring = "Onsite" | "Remote" | "Hybrid";
-
-export type JobLocation = {
+export type TJobLocation = {
   city: string;
   country: string;
 };
 
-export type StackItem = string;
+export type TStackItem = string;
 
-export interface Job {
+export interface IJob {
   id: string;
   title: string;
-  location: JobLocation;
-  typeOfHiring: TypeOfHiring[];
+  location: TJobLocation;
+  typeOfHiring: TTypeOfHiring[];
   shortDesc: string;
   longDesc: string;
-  requiredStack: StackItem[];
+  requiredStack: TStackItem[];
   salary: string;
   added: string;
 }

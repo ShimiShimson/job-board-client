@@ -7,12 +7,11 @@ import { JOBS } from "../../assets/job-mocks";
 import "./Home.scss";
 
 const Home: React.FC = () => {
-  const jobs = JOBS;
 
   return (
     <div className="job-board">
       <h1>Job Board</h1>
-      {jobs.map((job) => (
+      {JOBS.map((job) => (
         <div key={job.id} className="job-list-item">
           <JobListItem job={job} />
         </div>

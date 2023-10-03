@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import { Job } from "../../types/job";
+import { IJob } from "../../types/job";
 
 import "./JobListItem.scss";
 
-const JobListItem = ({ job }: { job: Job }) => {
+const JobListItem = ({ job }: { job: IJob }) => {
   const navigate = useNavigate();
 
   return (
