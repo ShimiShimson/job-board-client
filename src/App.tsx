@@ -6,7 +6,6 @@ import Job from "@/components/job/Job";
 import "./App.css";
 
 const App = () => {
-  console.log(crypto.randomUUID());
   return (
     <BrowserRouter>
       <Routes>
