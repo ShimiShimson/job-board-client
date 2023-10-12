@@ -6,11 +6,17 @@ import Job from "@/components/job/Job";
 import "./App.css";
 
 const App = () => {
+  const ROUTES = [
+    { path: "/", element: <Home />, index: true },
+    { path: "/job", element: <Job /> }
+  ];
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/job" element={<Job />} />
+        {ROUTES.map(({ element, path, index }) => (
+          <Route {...{ path, element, index }} />
+        ))}
       </Routes>
     </BrowserRouter>
   );
